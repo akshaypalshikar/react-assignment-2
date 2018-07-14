@@ -34,7 +34,7 @@ class App extends Component {
          
           {
             charArray?charArray.map((char,index)=>{
-            return (<CharacterComponent char={char} clicked={()=>this.deleteCharHandler(index)}/>)
+            return (<CharacterComponent char={char} key={index} clicked={()=>this.deleteCharHandler(index)}/>)
           }):null}
          
          </div>
